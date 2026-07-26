@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizakat Ali - Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- Top Header Navigation Bar (Visible on Top/Hero Section) -->
+    <nav class="top-navbar" id="topNavbar">
+        <div class="logo">
+            <h1>N&gt;A</h1>
+            <span>Portfolio</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-toggle-btn" id="menuToggleBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="side-drawer" id="sideDrawer">
+        <div class="drawer-header">
+            <div class="logo">
+                <h1>N&gt;A</h1>
+                <span>Portfolio</span>
+            </div>
+            <div class="close-btn" id="closeDrawerBtn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <ul class="drawer-links">
+            <li><a href="#home" class="drawer-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#skills" class="drawer-link"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects" class="drawer-link"><i class="fas fa-briefcase"></i> Projects</a></li>
+            <li><a href="#experience" class="drawer-link"><i class="fas fa-user-tie"></i> Experience</a></li>
+            <li><a href="#about" class="drawer-link"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#contact" class="drawer-link"><i class="fas fa-envelope"></i> Contact Me</a></li>
+        </ul>
+    </div>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <header id="home">
+        <div class="mian">
+            <div class="box">
+                <span class="greeting">Welcome to my Portfolio</span>
+                <h1>Nizakat Ali</h1>
+                <h2 class="typing-text">Frontend Developer & Web Specialist</h2>
+
+                <p class="description">
+                    I build responsive, high-performance web interfaces with modern design principles. Passionate about
+                    clean code, user-centric design, and seamless web experiences.
+                </p>
+
+                <div class="btn-group">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="box-img">
+                <div class="img">
+                    <img src="./imgs/Profile.png" alt="Nizakat Ali">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+            <div class="skill-card"><i class="fas fa-mobile-alt"></i><span>Responsive Design</span></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>CK Technical Solutions</h3>
+                    <p>A modern, multi-page business website designed for technical & digital services featuring
+                        interactive layouts and service sections.</p>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nizakataliofficial.github.io/CK-Technical-Solution/" target="_blank"
+                            class="proj-btn live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/nizakataliofficial/CK-Technical-Solution" target="_blank"
+                            class="proj-btn github-btn">
+                            <i class="fab fa-github"></i> Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>CK E-Commerce App</h3>
+                    <p>A feature-rich online shopping interface built with clean styling, dynamic product layouts, and
+                        an intuitive UI.</p>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nizakataliofficial.github.io/CK-E-Commerce/" target="_blank"
+                            class="proj-btn live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/nizakataliofficial/CK-E-Commerce" target="_blank"
+                            class="proj-btn github-btn">
+                            <i class="fab fa-github"></i> Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>NA Travels & Tours</h3>
+                    <p>A travel agency landing page showcasing destination packages, tour details, and smooth frontend
+                        booking layouts.</p>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nizakataliofficial.github.io/NA_TRAVELS-TOURS/" target="_blank"
+                            class="proj-btn live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/nizakataliofficial/NA_TRAVELS-TOURS" target="_blank"
+                            class="proj-btn github-btn">
+                            <i class="fab fa-github"></i> Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Typing Speed Test</h3>
+                    <p>An interactive web application measuring real-time typing speed (WPM) and accuracy with live
+                        visual feedback.</p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>DOM Logic</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nizakataliofficial.github.io/Typing-Speed-Test/" target="_blank"
+                            class="proj-btn live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/nizakataliofficial/Typing-Speed-Test" target="_blank"
+                            class="proj-btn github-btn">
+                            <i class="fab fa-github"></i> Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Raja's Calculator</h3>
+                    <p>A sleek, fully functional custom calculator capable of handling real-time arithmetic operations
+                        with dark key UI.</p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>CSS Grid</span>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nizakataliofficial.github.io/Raja-s-Calculator/" target="_blank"
+                            class="proj-btn live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/nizakataliofficial/Raja-s-Calculator" target="_blank"
+                            class="proj-btn github-btn">
+                            <i class="fab fa-github"></i> Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Personal Portfolio UI</h3>
+                    <p>A personal portfolio design featuring glassmorphic UI, custom glow effects, and responsive layout
+                        structure.</p>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Glassmorphism</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nizakataliofficial.github.io/Nizakat_ALI_Portfolio/" target="_blank"
+                            class="proj-btn live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/nizakataliofficial/Nizakat_ALI_Portfolio" target="_blank"
+                            class="proj-btn github-btn">
+                            <i class="fab fa-github"></i> Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="timeline">
+
+            <!-- Role 1: Frontend Developer -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Frontend Developer & Web Specialist</h3>
+                    <span class="timeline-date">Dec 2025 - Present</span>
+                    <p>Building responsive web applications, modern UI components, and dynamic user interfaces using
+                        HTML5, CSS3, JavaScript, and WordPress.</p>
+                </div>
+            </div>
+
+            <!-- Role 2: Pakistan Army -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>General Duty Service — Pakistan Army</h3>
+                    <span class="timeline-date">May 2025 - Nov 2025</span>
+                    <p>Completed 5 months of rigorous basic military training, demonstrating strong discipline, physical
+                        endurance, operational coordination, and team leadership.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Nursing Assistant & Ward Management</h3>
+                    <span class="timeline-date">Feb 2022 - Mar 2025</span>
+                    <p>Provided clinical patient care, handled pharmacy dispensing operations, maintained accurate
+                        medical records, and managed ward inventory efficiently.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-card">
+                <p>I am a dedicated <strong>Frontend Developer</strong> with a strong foundation in modern web design,
+                    database management, and operational workflows. I focus on writing clean, scalable code and turning
+                    visual ideas into fully functioning, responsive web experiences.</p>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>6+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>5+</h3>
+                        <p>Months Tech & Ops Experience</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Dedication & Client Focus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>nizakatali.official@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+92 328 301 4874</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Karachi, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Nizakat Ali. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
