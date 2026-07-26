@@ -5,15 +5,13 @@ const closeDrawerBtn = document.getElementById('closeDrawerBtn');
 const drawerOverlay = document.getElementById('drawerOverlay');
 const drawerLinks = document.querySelectorAll('.drawer-link');
 
-// Scroll Logic for Navbar & Toggle Button Switch
+// Scroll Logic for Navbar (auto-hide only on larger screens; stays pinned on mobile/tablet)
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
+    if (window.innerWidth > 991 && window.scrollY > 100) {
         topNavbar.classList.add('hidden');
-        menuToggleBtn.classList.add('visible');
     } else {
         topNavbar.classList.remove('hidden');
-        menuToggleBtn.classList.remove('visible');
-        closeMenu();
+        if (window.scrollY <= 100) closeMenu();
     }
 });
 
