@@ -75,52 +75,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const contactForm = document.querySelector('.contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault(); 
-        const nameInput = contactForm.querySelector('input[type="text"]');
-        const emailInput = contactForm.querySelector('input[type="email"]');
-        const messageInput = contactForm.querySelector('textarea');
-
-        const senderName = nameInput ? nameInput.value.trim() : 'Friend';
-
-        Swal.fire({
-            title: `Thank You, ${senderName}! 🎉`,
-            html: `
-                <p style="color: #cbd5e1; font-size: 15px; margin-top: 10px; line-height: 1.6;">
-                    Your message has been received successfully. I appreciate you taking the time to reach out!
-                </p>
-                <div style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 10px; padding: 12px; margin-top: 15px;">
-                    <span style="color: #38bdf8; font-size: 13px; font-weight: 500;">
-                        ⚡ Direct response will be sent to your email shortly.
-                    </span>
-                </div>
-            `,
-            icon: 'success',
-            iconColor: '#38bdf8',
-            background: '#081B28',
-            color: '#ffffff',
-            confirmButtonText: 'Great, Thanks!',
-            confirmButtonColor: '#38bdf8',
-            customClass: {
-                popup: 'swal-custom-popup',
-                confirmButton: 'swal-custom-btn'
-            },
-            showClass: {
-                popup: 'animate__animated animate__fadeInUp'
-            },
-            hideClass: {
-                popup: 'animate__animated animate__fadeOutDown'
-            }
-        });
-
-        contactForm.reset();
-    });
-}
-
-// Contact section Connect with my Mail 
+// Contact section - Connect with my Mail (Web3Forms)
 
 const form = document.getElementById('form');
 const submitBtn = form.querySelector('button[type="submit"]');
@@ -158,5 +113,3 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
-const formData = new FormData(contactForm);
-formData.append("access_key", "14d9ec3e-3f37-49e8-b66d-bc0dbf2ee7f8");
